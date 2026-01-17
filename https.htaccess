@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^eliquide-menu.fr$ [OR]
+RewriteCond %{HTTP_HOST} ^www.eliquide-menu.fr$
+RewriteRule ^(.*) https://www.eliquide-menu.fr/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !443
+RewriteRule ^(.*) https://www.eliquide-menu.fr/$1 [R=301,L]

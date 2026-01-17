@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.php
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Autoriser tous les robots
+  RewriteCond %{HTTP_USER_AGENT} (Googlebot|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou) [NC]
+  RewriteRule ^ - [L]
+</IfModule>
