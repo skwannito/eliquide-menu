@@ -3,14 +3,14 @@ session_start();
 
 // Vérifie si l'utilisateur a déjà confirmé son âge dans la session actuelle
 if (isset($_SESSION['age_confirmed']) && $_SESSION['age_confirmed'] === true) {
-    header('Location: http://127.0.0.1/em/index.php'); // Redirige vers la page d'accueil si l'utilisateur a déjà confirmé son âge
+    header('Location: http://127.0.0.1/eliquide-menu/index.php'); // Redirige vers la page d'accueil si l'utilisateur a déjà confirmé son âge
     exit;
 }
 
 // Si l'utilisateur a confirmé son âge, enregistre une variable de session et redirige vers la page d'accueil
 if (isset($_POST['confirm_age'])) {
     $_SESSION['age_confirmed'] = true;
-    header('Location: http://127.0.0.1/em/index.php');
+    header('Location: http://127.0.0.1/eliquide-menu/index.php');
     exit;
 }
 if (isset($_SESSION['age_not_confirmed']) && $_SESSION['age_confirmed'] === true) {
@@ -122,7 +122,7 @@ if (isset($_POST['confirm_not_age'])) {
 
 <body>
     <div class="container">
-        <img src="http://127.0.0.1/em/logo.png" alt="Logo">
+        <img src="http://127.0.0.1/eliquide-menu/logo.png" alt="Logo">
         <h2>Vous avez plus de 18 ans ?</h2>
         <p><b>En entrant sur ce site, je reconnais être majeur(e) et que je suis autorisé(e) par la législation de mon
                 pays à acheter des produits contenant de la nicotine.</b></p>

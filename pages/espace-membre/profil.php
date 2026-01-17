@@ -38,7 +38,7 @@ if (!$user) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
-    <link rel="stylesheet" href="http://127.0.0.1/em/pages/espace-membre/style-membre.css">
+    <link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/pages/espace-membre/style-membre.css">
 </head>
 
 <body>
@@ -52,17 +52,19 @@ if (!$user) {
 
             <ul class="menu-items">
                 <?php if ($user['id'] == 10 || $user['id'] == 13) { ?>
-                    <li><a href="http://127.0.0.1/em/">Admin</a></li><?php } ?>
-                <li><a href="http://127.0.0.1/em/">Allez au catalogue</a></li>
-                <li><a href="http://127.0.0.1/em/pages/espace-membre/profil.php">Mon profil</a></li>
-                <li><a href="http://127.0.0.1/em/pages/espace-membre/commandes.php">Historique des commandes</a></li>
-                <li><a href="http://127.0.0.1/em/pages/espace-membre/favoris.php">Favoris</a></li>
-                <li><a href="http://127.0.0.1/em/pages/espace-membre/informations_personnelles.php">Informations
+                    <li><a href="http://127.0.0.1/eliquide-menu/">Admin</a></li><?php } ?>
+                <li><a href="http://127.0.0.1/eliquide-menu/">Allez au catalogue</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/profil.php">Mon profil</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/commandes.php">Historique des
+                        commandes</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/favoris.php">Favoris</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/informations_personnelles.php">Informations
                         personnelles</a></li>
-                <li><a href="http://127.0.0.1/em/pages/espace-membre/adresse.php">Mes adresses</a></li>
-                <li><a href="http://127.0.0.1/em/pages/espace-membre/programme-fidelite.php">Mes points fidélités</a>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/adresse.php">Mes adresses</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/programme-fidelite.php">Mes points
+                        fidélités</a>
                 </li>
-                <li><a href="http://127.0.0.1/em/pages/panier.php">Mon panier</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/panier.php">Mon panier</a></li>
                 <li><a href="logout.php">Se déconnecter</a></li>
             </ul>
         </div>

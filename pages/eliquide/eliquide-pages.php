@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['user_id'], $_POST['
   <title>
     <?= $product->name; ?>
   </title>
-  <link rel="stylesheet" href="http://127.0.0.1/em/style_main.css" />
+  <link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/style_main.css" />
   <style>
     .reviews {
       margin-top: 40px;
@@ -173,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['user_id'], $_POST['
 <body>
   <header>
     <div class="logo">
-      <a href="http://127.0.0.1/em/"><img src="http://127.0.0.1/em/logo.png" alt="" /></a>
+      <a href="http://127.0.0.1/eliquide-menu/"><img src="http://127.0.0.1/eliquide-menu/logo.png" alt="" /></a>
     </div>
 
     <div class="menu-toggle">
@@ -188,22 +188,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['user_id'], $_POST['
           <input class="searchbar" type="search" placeholder="rerchercher" required id="search" value=""
             onchange="ouvrirpages()" />
         </li>
-        <li><a href="http://127.0.0.1/em/">accueil</a></li>
+        <li><a href="http://127.0.0.1/eliquide-menu/">accueil</a></li>
 
         <li>
-          <a href="http://127.0.0.1/em/pages/menu-e-liquide.php">menu e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/menu-e-liquide.php">menu e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/eliquide.php">e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/eliquide.php">e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/CE.php">cigarette électronique</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/CE.php">cigarette électronique</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/panier.php">panier</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/panier.php">panier</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/nous-contacter.php">contact</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/nous-contacter.php">contact</a>
         </li>
       </ul>
     </nav>
@@ -252,7 +252,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['user_id'], $_POST['
             <button type="submit">Envoyer</button>
           </form>
         <?php else: ?>
-          <p>Vous devez être <a href="http://127.0.0.1/em/pages/eliquide/eliquide-pages.php">connecté</a> pour laisser un
+          <p>Vous devez être <a href="http://127.0.0.1/eliquide-menu/pages/eliquide/eliquide-pages.php">connecté</a> pour
+            laisser un
             avis.</p>
         <?php endif; ?>
       </div>
@@ -261,7 +262,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['user_id'], $_POST['
 
   <?php include '../../footer.php'; ?>
 
-  <script src="http://127.0.0.1/em/script.js"></script>
+  <script src="http://127.0.0.1/eliquide-menu/script.js"></script>
 </body>
 
 </html>

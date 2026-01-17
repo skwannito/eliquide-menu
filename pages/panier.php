@@ -13,16 +13,16 @@ $DB = new DB();
 $panier = new panier();
 if (isset($_GET["del"])) {
   $panier->del($_GET["del"]);
-  header("Location : http://127.0.0.1/em/pages/panier.php");
+  header("Location : http://127.0.0.1/eliquide-menu/pages/panier.php");
 }
 if (isset($_GET["add"])) {
   $panier->add($_GET["add"]);
-  header("Location : http://127.0.0.1/em/pages/panier.php");
+  header("Location : http://127.0.0.1/eliquide-menu/pages/panier.php");
   exit;
 }
 if (isset($_GET["remove"])) {
   $panier->remove($_GET["remove"]);
-  header("Location : http://127.0.0.1/em/pages/panier.php");
+  header("Location : http://127.0.0.1/eliquide-menu/pages/panier.php");
 
 }
 if (isset($_SESSION["panier"])) {
@@ -43,7 +43,7 @@ if (isset($_SESSION["panier"])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>panier</title>
-  <link rel="stylesheet" href="http://127.0.0.1/em/style_main.css" />
+  <link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/style_main.css" />
 </head>
 <style>
   .panier-container {
@@ -133,7 +133,7 @@ if (isset($_SESSION["panier"])) {
 <body>
   <header>
     <div class="logo">
-      <a href="http://127.0.0.1/em/"><img src="http://127.0.0.1/em/logo.png" alt="" /></a>
+      <a href="http://127.0.0.1/eliquide-menu/"><img src="http://127.0.0.1/eliquide-menu/logo.png" alt="" /></a>
     </div>
 
     <div class="menu-toggle">
@@ -148,22 +148,22 @@ if (isset($_SESSION["panier"])) {
           <input class="searchbar" type="search" placeholder="rerchercher" required id="search" value=""
             onchange="ouvrirpages()" />
         </li>
-        <li><a href="http://127.0.0.1/em/">accueil</a></li>
+        <li><a href="http://127.0.0.1/eliquide-menu/">accueil</a></li>
 
         <li>
-          <a href="http://127.0.0.1/em/pages/menu-e-liquide.php">menu e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/menu-e-liquide.php">menu e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/eliquide.php">e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/eliquide.php">e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/CE.php">cigarette électronique</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/CE.php">cigarette électronique</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/panier.php">panier</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/panier.php">panier</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/nous-contacter.php">contact</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/nous-contacter.php">contact</a>
         </li>
       </ul>
     </nav>
@@ -186,13 +186,13 @@ if (isset($_SESSION["panier"])) {
         $category = $product->categorie;
         switch ($category) {
           case 'menu':
-            $productURL = 'http://127.0.0.1/em/pages/menu/menu-pages.php?id=' . $product->id;
+            $productURL = 'http://127.0.0.1/eliquide-menu/pages/menu/menu-pages.php?id=' . $product->id;
             break;
           case 'ce':
-            $productURL = 'http://127.0.0.1/em/pages/CE/CE-pages.php?id=' . $product->id;
+            $productURL = 'http://127.0.0.1/eliquide-menu/pages/CE/CE-pages.php?id=' . $product->id;
             break;
           case 'eliquide':
-            $productURL = 'http://127.0.0.1/em/pages/eliquide/eliquide-pages.php?id=' . $product->id;
+            $productURL = 'http://127.0.0.1/eliquide-menu/pages/eliquide/eliquide-pages.php?id=' . $product->id;
             break;
           default:
             $productURL = '#';
@@ -211,16 +211,18 @@ if (isset($_SESSION["panier"])) {
           <div class="article-quantite">
 
 
-            <a href="http://127.0.0.1/em/pages/panier.php?remove=<?= $product->id ?>" style="font-size:30px;">⇦</a>
+            <a href="http://127.0.0.1/eliquide-menu/pages/panier.php?remove=<?= $product->id ?>"
+              style="font-size:30px;">⇦</a>
             <span>
               <?php echo $quantity; ?>
-            </span><a href="http://127.0.0.1/em/pages/panier.php?add=<?= $product->id ?>" style="font-size:30px;">⇨</a>
+            </span><a href="http://127.0.0.1/eliquide-menu/pages/panier.php?add=<?= $product->id ?>"
+              style="font-size:30px;">⇨</a>
 
           </div>
           <div class="article-total">
             <?= $product->price * $quantity; ?>€
-            <a href="http://127.0.0.1/em/pages/panier.php?del=<?= $product->id ?>" style="font-size:30px;"><img
-                src="http://127.0.0.1/em/img-main/poubelle.png" alt="" style="width: 20px;"></a>
+            <a href="http://127.0.0.1/eliquide-menu/pages/panier.php?del=<?= $product->id ?>" style="font-size:30px;"><img
+                src="http://127.0.0.1/eliquide-menu/img-main/poubelle.png" alt="" style="width: 20px;"></a>
           </div>
         </div>
         <?php
@@ -238,7 +240,7 @@ if (isset($_SESSION["panier"])) {
   </div>
   <div class="payer-container">
     <?php if (!empty($_SESSION["panier"]) && is_array($_SESSION["panier"])): ?>
-      <a class="payer" href="http://127.0.0.1/em/pages/passer-commande.php">Payer</a>
+      <a class="payer" href="http://127.0.0.1/eliquide-menu/pages/passer-commande.php">Payer</a>
     <?php else: ?>
       <span class="payer" style="background-color: gray; cursor: not-allowed;">Payer</span>
     <?php endif; ?>
@@ -247,7 +249,7 @@ if (isset($_SESSION["panier"])) {
   <?php include '../footer.php'; ?>
 
 </body>
-<script src="http://127.0.0.1/em/script.js"></script>
+<script src="http://127.0.0.1/eliquide-menu/script.js"></script>
 
 
 </html>

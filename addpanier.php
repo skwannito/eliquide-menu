@@ -8,7 +8,7 @@ if (isset($_GET["id"])) {
 	}
 
 	$panier->add($product[0]->id);
-	$texte = "le produit a bien été ajouté au panier <a href='http://127.0.0.1/em/' style='text-decoration:underline;'>retourner au catalogue</a> ou <a href='http://127.0.0.1/em/pages/panier.php' style='text-decoration:underline;'>aller au panier</a>";
+	$texte = "le produit a bien été ajouté au panier <a href='http://127.0.0.1/eliquide-menu/' style='text-decoration:underline;'>retourner au catalogue</a> ou <a href='http://127.0.0.1/eliquide-menu/pages/panier.php' style='text-decoration:underline;'>aller au panier</a>";
 } else {
 	$texte = "pas de produit";
 }
@@ -24,7 +24,7 @@ if (isset($_GET["id"])) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ajouté au panier</title>
-	<link rel="stylesheet" href="http://127.0.0.1/em/style_main.css">
+	<link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/style_main.css">
 	<style>
 		body {
 			margin: 0;

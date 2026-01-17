@@ -3,7 +3,8 @@
 session_start();
 
 // Fonction pour générer un code de confirmation à 6 chiffres
-function generateConfirmationCode() {
+function generateConfirmationCode()
+{
     return mt_rand(100000, 999999);
 }
 
@@ -80,7 +81,7 @@ $message = "
 <body>
     <div class='container'>
         <div class='logo'>
-            <img src='http://127.0.0.1/em/logo.png' alt='Logo du site'>
+            <img src='http://127.0.0.1/eliquide-menu/logo.png' alt='Logo du site'>
         </div>
         <h2>Bonjour, $prenom $nom !</h2>
         <p>Vous avez demandé la réinitialisation de votre mot de passe pour votre compte <b>Eliquide Menu</b>.</p>

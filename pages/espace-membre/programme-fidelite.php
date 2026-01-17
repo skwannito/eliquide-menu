@@ -32,7 +32,7 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="http://127.0.0.1/em/style_main.css" />
+    <link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/style_main.css" />
     <title>Programme de Fidélité</title>
 
     <style>
@@ -131,16 +131,18 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
             </h2>
         </div>
         <ul class="menu-items">
-            <li><a href="http://127.0.0.1/em/">Allez au catalogue</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/profil.php">Mon profil</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/commandes.php">Historique des commandes</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/favoris.php">Favoris</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/informations_personnelles.php">Informations
-                    personnelles</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/adresse.php">Mes adresses</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/programme-fidelite.php">Mes points fidélités</a>
+            <li><a href="http://127.0.0.1/eliquide-menu/">Allez au catalogue</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/profil.php">Mon profil</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/commandes.php">Historique des commandes</a>
             </li>
-            <li><a href="http://127.0.0.1/em/pages/panier.php">Mon panier</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/favoris.php">Favoris</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/informations_personnelles.php">Informations
+                    personnelles</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/adresse.php">Mes adresses</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/programme-fidelite.php">Mes points
+                    fidélités</a>
+            </li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/panier.php">Mon panier</a></li>
             <li><a href="logout.php">Se déconnecter</a></li>
         </ul>
     </div>
@@ -155,7 +157,7 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
             </div>
 
             <button>
-                <a href="http://127.0.0.1/em/pages/panier.php">Accéder au panier</a>
+                <a href="http://127.0.0.1/eliquide-menu/pages/panier.php">Accéder au panier</a>
             </button>
 
             <div class="reward">
@@ -169,7 +171,7 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
     </main>
 
 
-    <script src="http://127.0.0.1/em/script.js"></script>
+    <script src="http://127.0.0.1/eliquide-menu/script.js"></script>
 </body>
 
 </html>

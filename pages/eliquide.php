@@ -21,7 +21,7 @@ function truncateText($text, $maxLength = 120)
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e-liquide</title>
-    <link rel="stylesheet" href="http://127.0.0.1/em/style_main.css" />
+    <link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/style_main.css" />
     <style>
         .favorite-heart {
             cursor: pointer;
@@ -42,7 +42,7 @@ function truncateText($text, $maxLength = 120)
 <body>
     <header>
         <div class="logo">
-            <a href="http://127.0.0.1/em/"><img src="http://127.0.0.1/em/logo.png" alt="" /></a>
+            <a href="http://127.0.0.1/eliquide-menu/"><img src="http://127.0.0.1/eliquide-menu/logo.png" alt="" /></a>
         </div>
 
         <div class="menu-toggle">
@@ -57,12 +57,12 @@ function truncateText($text, $maxLength = 120)
                     <input class="searchbar" type="search" placeholder="rechercher" required id="search" value=""
                         onchange="ouvrirpages()" />
                 </li>
-                <li><a href="http://127.0.0.1/em/">accueil</a></li>
-                <li><a href="http://127.0.0.1/em/pages/menu-e-liquide.php">menu e-liquide</a></li>
-                <li><a href="http://127.0.0.1/em/pages/eliquide.php">e-liquide</a></li>
-                <li><a href="http://127.0.0.1/em/pages/CE.php">cigarette électronique</a></li>
-                <li><a href="http://127.0.0.1/em/pages/panier.php">panier</a></li>
-                <li><a href="http://127.0.0.1/em/pages/nous-contacter.php">contact</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/">accueil</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/menu-e-liquide.php">menu e-liquide</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/eliquide.php">e-liquide</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/CE.php">cigarette électronique</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/panier.php">panier</a></li>
+                <li><a href="http://127.0.0.1/eliquide-menu/pages/nous-contacter.php">contact</a></li>
             </ul>
         </nav>
 
@@ -97,7 +97,7 @@ function truncateText($text, $maxLength = 120)
 
                 <h3><?= $product->name ?></h3>
                 <p><?= truncateText($product->description) ?></p>
-                <a href="http://127.0.0.1/em/pages/eliquide/eliquide-pages.php?id=<?= $product->id ?>">
+                <a href="http://127.0.0.1/eliquide-menu/pages/eliquide/eliquide-pages.php?id=<?= $product->id ?>">
                     <img src="<?= $product->url_photo ?>" alt="Image" class="img" />
                 </a>
             </div>
@@ -204,6 +204,6 @@ function truncateText($text, $maxLength = 120)
         }
     </script>
 </body>
-<script src="http://127.0.0.1/em/script.js"></script>
+<script src="http://127.0.0.1/eliquide-menu/script.js"></script>
 
 </html>

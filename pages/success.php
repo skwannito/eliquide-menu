@@ -20,20 +20,20 @@ $panier = new panier();
 // Supprimer un produit du panier si nécessaire
 if (isset($_GET["del"])) {
     $panier->del($_GET["del"]);
-    header("Location: http://127.0.0.1/em/pages/panier.php");
+    header("Location: http://127.0.0.1/eliquide-menu/pages/panier.php");
 }
 
 // Ajouter un produit au panier si nécessaire
 if (isset($_GET["add"])) {
     $panier->add($_GET["add"]);
-    header("Location: http://127.0.0.1/em/pages/panier.php");
+    header("Location: http://127.0.0.1/eliquide-menu/pages/panier.php");
     exit;
 }
 
 // Retirer un produit du panier si nécessaire
 if (isset($_GET["remove"])) {
     $panier->remove($_GET["remove"]);
-    header("Location: http://127.0.0.1/em/pages/panier.php");
+    header("Location: http://127.0.0.1/eliquide-menu/pages/panier.php");
 }
 
 // Initialiser les variables pour les produits et le prix total
@@ -198,7 +198,7 @@ function generateUniqueOrderNumber()
 
     <div class="bloc">
         <div class="success-logo">
-            <img src="http://127.0.0.1/em/pages/espace-membre/img-password/imgsucess/check_mark.png">
+            <img src="http://127.0.0.1/eliquide-menu/pages/espace-membre/img-password/imgsucess/check_mark.png">
         </div>
         <h1 class="font-title">Merci pour votre achat !</h1>
         <p>Nous vous avertirons lorsque votre commande sera envoyée.</p>

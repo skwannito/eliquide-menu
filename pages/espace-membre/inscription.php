@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class='container'>
         <div class='logo'>
-            <img src='http://127.0.0.1/em/logo.png' alt='Logo du site'>
+            <img src='http://127.0.0.1/eliquide-menu/logo.png' alt='Logo du site'>
         </div>
         <h2>Bienvenue, $prenom $nom !</h2>
         <p>Merci de vous être inscrit sur notre site. Nous sommes ravis de vous accueillir dans notre communauté.</p>
@@ -260,7 +260,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
 
-    <a href="http://127.0.0.1/em/" style="position: absolute; top: 10px; left: 10px; text-decoration: none;
+    <a href="http://127.0.0.1/eliquide-menu/" style="position: absolute; top: 10px; left: 10px; text-decoration: none;
  color: #fff; font-weight: bold; background-color: #A9A9A9; padding: 8px 12px; border-radius: 4px;">Retour</a>
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -286,14 +286,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="password">Mot de passe:</label>
         <div style="position: relative;">
             <input type="password" id="password" name="password" required>
-            <img class="oeil" src="http://127.0.0.1/em/pages/espace-membre/img-password/voir.png" id="togglePassword"
-                onclick="togglePasswordVisibility()">
+            <img class="oeil" src="http://127.0.0.1/eliquide-menu/pages/espace-membre/img-password/voir.png"
+                id="togglePassword" onclick="togglePasswordVisibility()">
         </div>
 
         <label for="confirmPassword">Confirmer le mot de passe:</label>
         <div style="position: relative;">
             <input type="password" id="confirmPassword" name="confirmPassword" required>
-            <img class="oeil" src="http://127.0.0.1/em/pages/espace-membre/img-password/voir.png"
+            <img class="oeil" src="http://127.0.0.1/eliquide-menu/pages/espace-membre/img-password/voir.png"
                 id="toggleconfirmPassword" onclick="togglePasswordconfirmVisibility()">
         </div>
 
@@ -304,7 +304,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </p>
         <?php endif; ?>
         <br><br>
-        <p><b>Vous avez déjà un compte ?<a href="http://127.0.0.1/em/pages/espace-membre/conexion.php"> se
+        <p><b>Vous avez déjà un compte ?<a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/conexion.php"> se
                     connecter</a></b></p>
     </form>
 
@@ -315,10 +315,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
-                toggleIcon.src = 'http://127.0.0.1/em/pages/espace-membre/img-password/cacher.png';
+                toggleIcon.src = 'http://127.0.0.1/eliquide-menu/pages/espace-membre/img-password/cacher.png';
             } else {
                 passwordInput.type = 'password';
-                toggleIcon.src = 'http://127.0.0.1/em/pages/espace-membre/img-password/voir.png';
+                toggleIcon.src = 'http://127.0.0.1/eliquide-menu/pages/espace-membre/img-password/voir.png';
             }
         }
         function togglePasswordconfirmVisibility() {
@@ -327,10 +327,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
-                toggleIcon.src = 'http://127.0.0.1/em/pages/espace-membre/img-password/cacher.png';
+                toggleIcon.src = 'http://127.0.0.1/eliquide-menu/pages/espace-membre/img-password/cacher.png';
             } else {
                 passwordInput.type = 'password';
-                toggleIcon.src = 'http://127.0.0.1/em/pages/espace-membre/img-password/voir.png';
+                toggleIcon.src = 'http://127.0.0.1/eliquide-menu/pages/espace-membre/img-password/voir.png';
             }
         }
     </script>

@@ -39,10 +39,10 @@ if (is_dir($directory)) {
   <title>
     <?= $product->name; ?>
   </title>
-  <link rel="stylesheet" href="http://127.0.0.1/em/style_main.css" />
+  <link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/style_main.css" />
   <!-- Ajoutez les styles CSS de Slick Slider -->
-  <link rel="stylesheet" type="text/css" href="http://127.0.0.1/em/pages/slick-master/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="http://127.0.0.1/em/pages/slick-master/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1/eliquide-menu/pages/slick-master/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1/eliquide-menu/pages/slick-master/slick/slick-theme.css">
   <style>
     /* Styles personnalisés pour le slider */
     .slider-1 {
@@ -125,7 +125,7 @@ if (is_dir($directory)) {
 <body>
   <header>
     <div class="logo">
-      <a href="http://127.0.0.1/em/"><img src="http://127.0.0.1/em/logo.png" alt="" /></a>
+      <a href="http://127.0.0.1/eliquide-menu/"><img src="http://127.0.0.1/eliquide-menu/logo.png" alt="" /></a>
     </div>
 
     <div class="menu-toggle">
@@ -140,22 +140,22 @@ if (is_dir($directory)) {
           <input class="searchbar" type="search" placeholder="rerchercher" required id="search" value=""
             onchange="ouvrirpages()" />
         </li>
-        <li><a href="http://127.0.0.1/em/">accueil</a></li>
+        <li><a href="http://127.0.0.1/eliquide-menu/">accueil</a></li>
 
         <li>
-          <a href="http://127.0.0.1/em/pages/menu-e-liquide.php">menu e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/menu-e-liquide.php">menu e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/eliquide.php">e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/eliquide.php">e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/CE.php">cigarette électronique</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/CE.php">cigarette électronique</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/panier.php">panier</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/panier.php">panier</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/nous-contacter.php">contact</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/nous-contacter.php">contact</a>
         </li>
       </ul>
     </nav>
@@ -197,9 +197,9 @@ if (is_dir($directory)) {
   <?php include '../../footer.php'; ?>
 
   <!-- Scripts JavaScript -->
-  <script src="http://127.0.0.1/em/pages/slick-master/slick/slick.js"></script>
+  <script src="http://127.0.0.1/eliquide-menu/pages/slick-master/slick/slick.js"></script>
   <!-- Ajoutez le script de Slick Slider -->
-  <script src="http://127.0.0.1/em/pages/slick-master/slick/slick.min.js"></script>
+  <script src="http://127.0.0.1/eliquide-menu/pages/slick-master/slick/slick.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.slider').slick({
@@ -209,7 +209,7 @@ if (is_dir($directory)) {
       });
     });
   </script>
-  <script src="http://127.0.0.1/em/script.js"></script>
+  <script src="http://127.0.0.1/eliquide-menu/script.js"></script>
 </body>
 
 </html>

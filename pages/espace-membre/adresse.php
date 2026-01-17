@@ -196,17 +196,19 @@ $adresses = $requete_adresses->fetchAll(PDO::FETCH_ASSOC);
             </h2>
         </div>
         <ul class="menu-items">
-            <li><a href="http://127.0.0.1/em/">Allez au catalogue</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/profil.php">Mon profil</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/commandes.php">Historique des commandes</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/favoris.php">Favoris</a></li>
-
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/informations_personnelles.php">Informations
-                    personnelles</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/adresse.php">Mes adresses</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/programme-fidelite.php">Mes points fidélités</a>
+            <li><a href="http://127.0.0.1/eliquide-menu/">Allez au catalogue</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/profil.php">Mon profil</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/commandes.php">Historique des commandes</a>
             </li>
-            <li><a href="http://127.0.0.1/em/pages/panier.php">Mon panier</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/favoris.php">Favoris</a></li>
+
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/informations_personnelles.php">Informations
+                    personnelles</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/adresse.php">Mes adresses</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/programme-fidelite.php">Mes points
+                    fidélités</a>
+            </li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/panier.php">Mon panier</a></li>
             <li><a href="logout.php">Se déconnecter</a></li>
 
         </ul>
@@ -278,7 +280,7 @@ $adresses = $requete_adresses->fetchAll(PDO::FETCH_ASSOC);
             if (confirm("Voulez-vous vraiment supprimer cette adresse ?")) {
                 // Envoi de la requête AJAX
                 var xhr = new XMLHttpRequest();
-                xhr.open("POST", "http://127.0.0.1/em/pages/espace-membre/suppradresse.php", true);
+                xhr.open("POST", "http://127.0.0.1/eliquide-menu/pages/espace-membre/suppradresse.php", true);
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                 xhr.onreadystatechange = function () {
                     if (xhr.readyState == 4 && xhr.status == 200) {

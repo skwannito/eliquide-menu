@@ -17,20 +17,20 @@ $panier = new panier();
 // Supprimer un produit du panier
 if (isset($_GET["del"])) {
     $panier->del($_GET["del"]);
-    header("Location: http://127.0.0.1/em/pages/panier.php");
+    header("Location: http://127.0.0.1/eliquide-menu/pages/panier.php");
 }
 
 // Ajouter un produit au panier
 if (isset($_GET["add"])) {
     $panier->add($_GET["add"]);
-    header("Location: http://127.0.0.1/em/pages/panier.php");
+    header("Location: http://127.0.0.1/eliquide-menu/pages/panier.php");
     exit;
 }
 
 // Retirer un produit du panier
 if (isset($_GET["remove"])) {
     $panier->remove($_GET["remove"]);
-    header("Location: http://127.0.0.1/em/pages/panier.php");
+    header("Location: http://127.0.0.1/eliquide-menu/pages/panier.php");
 }
 
 // Initialisation des variables pour les produits et le prix total
@@ -49,8 +49,8 @@ if (isset($_SESSION["panier"]) && is_array($_SESSION["panier"])) {
 }
 
 if (!isset($_SESSION['user_id'])) {
-    $_SESSION['redirect'] = "http://127.0.0.1/em/pages/passer-commande.php";
-    header("Location: http://127.0.0.1/em/pages/espace-membre/conexion.php");
+    $_SESSION['redirect'] = "http://127.0.0.1/eliquide-menu/pages/passer-commande.php";
+    header("Location: http://127.0.0.1/eliquide-menu/pages/espace-membre/conexion.php");
     exit();
 }
 
@@ -327,7 +327,7 @@ $prenom = $user["Nom"];
 
     <script>
         function retourAuPanier() {
-            window.location.href = "http://127.0.0.1/em/pages/panier.php";
+            window.location.href = "http://127.0.0.1/eliquide-menu/pages/panier.php";
         }
     </script>
 

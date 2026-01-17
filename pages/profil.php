@@ -110,7 +110,7 @@ if (!$user) {
 </head>
 
 <body>
-    <a href="http://127.0.0.1/em/" style="position: absolute; top: 10px; left: 10px; text-decoration: none;
+    <a href="http://127.0.0.1/eliquide-menu/" style="position: absolute; top: 10px; left: 10px; text-decoration: none;
  color: #fff; font-weight: bold; background-color: #A9A9A9; padding: 8px 12px; border-radius: 4px;">Acceuil</a>
 
     <div class="profile-container">
@@ -119,12 +119,13 @@ if (!$user) {
 
         <!-- Liens vers les différentes sections -->
         <ul>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/commandes.php">Historique des commandes</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/informations_personnelles.php">Informations
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/commandes.php">Historique des commandes</a>
+            </li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/informations_personnelles.php">Informations
                     personnelles</a></li>
-            <li><a href="http://127.0.0.1/em/pages/espace-membre/adresse.php">Mes adresses</a></li>
-            <li><a href="http://127.0.0.1/em/pages/programme-fidelite.php">Mes points fidélités</a></li>
-            <li><a href="http://127.0.0.1/em/pages/panier.php">Mon panier</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/adresse.php">Mes adresses</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/programme-fidelite.php">Mes points fidélités</a></li>
+            <li><a href="http://127.0.0.1/eliquide-menu/pages/panier.php">Mon panier</a></li>
         </ul>
 
         <button class="logout-btn" onclick="window.location='logout.php'">Se déconnecter</button>

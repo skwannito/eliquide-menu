@@ -36,14 +36,14 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>page d'accueil</title>
-  <link rel="stylesheet" href="http://127.0.0.1/em/style_main.css" />
-  <link rel="shortcut icon" href="http://127.0.0.1/em/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="http://127.0.0.1/eliquide-menu/style_main.css" />
+  <link rel="shortcut icon" href="http://127.0.0.1/eliquide-menu/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <a href="http://127.0.0.1/em/"><img src="http://127.0.0.1/em/logo.png" alt="" /></a>
+      <a href="http://127.0.0.1/eliquide-menu/"><img src="http://127.0.0.1/eliquide-menu/logo.png" alt="" /></a>
     </div>
 
 
@@ -62,22 +62,22 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
             onchange="ouvrirpages()" />
         </li>
 
-        <li><a href="http://127.0.0.1/em/">accueil</a></li>
+        <li><a href="http://127.0.0.1/eliquide-menu/">accueil</a></li>
 
         <li>
-          <a href="http://127.0.0.1/em/pages/menu-e-liquide.php">menu e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/menu-e-liquide.php">menu e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/eliquide.php">e-liquide</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/eliquide.php">e-liquide</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/CE.php">cigarette éléctronique</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/CE.php">cigarette éléctronique</a>
         </li>
         <li>
           <a href="pages/panier.php">panier</a>
         </li>
         <li>
-          <a href="http://127.0.0.1/em/pages/nous-contacter.php">contact</a>
+          <a href="http://127.0.0.1/eliquide-menu/pages/nous-contacter.php">contact</a>
         </li>
       </ul>
     </nav>
@@ -92,7 +92,7 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
   <div class="banniere">
     <h3 class="titre-main">Les produits de la semaine</h3>
     <div class="gradient-overlay"></div>
-    <img src="http://127.0.0.1/em/img-main/banniere2-main.jpg" alt="montagne" class="img-main" />
+    <img src="http://127.0.0.1/eliquide-menu/img-main/banniere2-main.jpg" alt="montagne" class="img-main" />
 
   </div>
   <?php
@@ -101,17 +101,17 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
     // Afficher le logo du profil
   
     echo '<div class="profile-logo" >
-    <a href="http://127.0.0.1/em/pages/espace-membre/favoris.php" class="image-space">
-    <img  src="http://127.0.0.1/em/pages/img_aceuille/étoile.png" alt="Panier" /></a>
+    <a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/favoris.php" class="image-space">
+    <img  src="http://127.0.0.1/eliquide-menu/pages/img_aceuille/étoile.png" alt="Panier" /></a>
     
-    <a href="http://127.0.0.1/em/pages/espace-membre/profil.php" class="image-space">
-    <img  src="http://127.0.0.1/em/img-main/boutonutilisateur.png" alt="Profil" />    <p style="text-align:center">';
+    <a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/profil.php" class="image-space">
+    <img  src="http://127.0.0.1/eliquide-menu/img-main/boutonutilisateur.png" alt="Profil" />    <p style="text-align:center">';
     echo $user["pseudo"];
     echo '</p>';
     echo ' </a>
 
-    <a href="http://127.0.0.1/em/pages/panier.php" class="image-space">
-    <img  src="http://127.0.0.1/em/pages/img_aceuille/panier.png" alt="Panier" /> </a>
+    <a href="http://127.0.0.1/eliquide-menu/pages/panier.php" class="image-space">
+    <img  src="http://127.0.0.1/eliquide-menu/pages/img_aceuille/panier.png" alt="Panier" /> </a>
 
     </div>';
 
@@ -119,8 +119,8 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
   } else {
     // Afficher les boutons d'inscription et de connexion
     echo '<div style="margin-top: 20px;text-align: center;">
-            <a href="http://127.0.0.1/em/pages/espace-membre/inscription.php" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 16px; background-color: #2a2424; padding: 10px 20px; border-radius: 20px;">Inscription</a>
-            <a href="http://127.0.0.1/em/pages/espace-membre/conexion.php" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 16px; background-color: #2a2424; padding: 10px 20px; border-radius: 20px;">Connexion</a>
+            <a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/inscription.php" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 16px; background-color: #2a2424; padding: 10px 20px; border-radius: 20px;">Inscription</a>
+            <a href="http://127.0.0.1/eliquide-menu/pages/espace-membre/conexion.php" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 16px; background-color: #2a2424; padding: 10px 20px; border-radius: 20px;">Connexion</a>
           </div>';
   }
   ?>
@@ -138,7 +138,7 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
         <p>
           <?= $product->description ?>
         </p>
-        <a href="http://127.0.0.1/em/pages/eliquide/eliquide-pages.php?id=<?= $product->id ?>"><img
+        <a href="http://127.0.0.1/eliquide-menu/pages/eliquide/eliquide-pages.php?id=<?= $product->id ?>"><img
             src=<?= $product->url_photo ?> alt="Image" class="img" /></a>
 
       </div>
@@ -188,7 +188,7 @@ $user = $requete->fetch(PDO::FETCH_ASSOC);
       }
     });
   </script>
-  <script src="http://127.0.0.1/em/script.js"></script>
+  <script src="http://127.0.0.1/eliquide-menu/script.js"></script>
 </body>
 
 </html>
