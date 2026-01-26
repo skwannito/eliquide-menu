@@ -7,6 +7,9 @@ This website sells vaping products and offers a new variety of content: e-liquid
 E-liquid menus are discovery packs that include several flavors from the chosen theme.
 
 **Example:** the fruity menu will include cherry, strawberry, and grape flavors.
+### Demo
+You can check the demo of this website by clicking this link
+[![Voir la démo](https://img.youtube.com/vi/8LfMpOI6iG0/0.jpg)](https://www.youtube.com/watch?v=8LfMpOI6iG0)
 
 ## How to use
 
