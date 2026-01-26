@@ -26,4 +26,5 @@ Finally, go to each database and click on **Import** at the top to add the two S
 
 ## Author credit
 
-Swann Kentzel (first year of dual degree in Mathematics and Computer Science)
+Swann Kentzel (Double Degree in Mathematics and Computer Science)
+Baptiste Molko (Big School Program in EM Normandie)
